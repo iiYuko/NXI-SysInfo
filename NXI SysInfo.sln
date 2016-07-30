@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NXI SysInfo", "NXI SysInfo\NXI SysInfo.csproj", "{38A2C0EA-E5C6-4748-8F9C-AACCA75F3D94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NXI.SysInfo", "NXI SysInfo\NXI.SysInfo.csproj", "{38A2C0EA-E5C6-4748-8F9C-AACCA75F3D94}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NXI.MathLib", "NXI.MathLib\NXI.MathLib.vbproj", "{DA8223B8-18B6-4A8D-9CA5-DA3B15E0B8CD}"
 EndProject

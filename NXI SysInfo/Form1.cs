@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.Win32;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,7 +27,9 @@ namespace NXI_SysInfo
         {
             ulong totalRamMemory = NXI.MathLib.Math.BytesToGbUlong(i.TotalPhysicalMemory);
             string totalRamMemoryStr = NXI.MathLib.Math.FormatULong(totalRamMemory, "##, ###, ###");
-            label3.Text = i.OSFullName + ", v" + i.OSVersion + ", " + i.OSPlatform + ", " + totalRamMemoryStr  + "GB RAM"; 
+            label3.Text = i.OSFullName + ", v" + i.OSVersion + ", " + i.OSPlatform + ", " + totalRamMemoryStr  + "GB RAM";
+
+            label10.Text = W32Mng.CPU.getCPUName();
         }
     }
 }

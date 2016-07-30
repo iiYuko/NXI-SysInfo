@@ -46,10 +46,17 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -124,6 +131,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.panel3);
+            this.tabPage1.Controls.Add(this.panel2);
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Location = new System.Drawing.Point(4, 28);
@@ -223,7 +232,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label7.Location = new System.Drawing.Point(7, 7);
+            this.label7.Location = new System.Drawing.Point(7, 4);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(48, 25);
             this.label7.TabIndex = 0;
@@ -232,11 +241,67 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(9, 32);
+            this.label8.Location = new System.Drawing.Point(9, 29);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(245, 15);
             this.label8.TabIndex = 1;
             this.label8.Text = "CPU Information - Name, Speed, Vendor, etc.";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Location = new System.Drawing.Point(13, 50);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(269, 197);
+            this.panel2.TabIndex = 2;
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(288, 50);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(269, 197);
+            this.panel3.TabIndex = 3;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.label9.Location = new System.Drawing.Point(6, 6);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(69, 15);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "CPU Name:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 21);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(17, 15);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "--";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 54);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(17, 15);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "--";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.label12.Location = new System.Drawing.Point(6, 39);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(62, 15);
+            this.label12.TabIndex = 2;
+            this.label12.Text = "CPU Type:";
             // 
             // Form1
             // 
@@ -254,6 +319,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -278,6 +345,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
     }
 }
 

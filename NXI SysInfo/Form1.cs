@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NXI.MathLib;
 
 namespace NXI_SysInfo
 {
@@ -21,8 +22,11 @@ namespace NXI_SysInfo
         }
 
         private void Form1_Load(object sender, EventArgs e)
+            
         {
-            label3.Text = i.OSFullName + ", v" + i.OSVersion + ", " + i.OSPlatform + ", " + (i.TotalPhysicalMemory / 1024) / 1024 / 1024 + "GB RAM"; 
+            ulong totalRamMemory = NXI.MathLib.Math.BytesToGbUlong(i.TotalPhysicalMemory);
+            string totalRamMemoryStr = NXI.MathLib.Math.FormatULong(totalRamMemory, "##, ###, ###");
+            label3.Text = i.OSFullName + ", v" + i.OSVersion + ", " + i.OSPlatform + ", " + totalRamMemoryStr  + "GB RAM"; 
         }
     }
 }

@@ -12,12 +12,11 @@ namespace NXI_SysInfo
         public class CPU
         {
             private static string CPUName;
+            private static string CPUDesc;
 
             public static string getCPUName()
             {
-                using (ManagementObjectSearcher win32Proc = new ManagementObjectSearcher("select * from Win32_Processor"),
-                win32CompSys = new ManagementObjectSearcher("select * from Win32_ComputerSystem"),
-                win32Memory = new ManagementObjectSearcher("select * from Win32_PhysicalMemory"))
+                using (ManagementObjectSearcher win32Proc = new ManagementObjectSearcher("select * from Win32_Processor"))
                 
 
                     foreach (ManagementObject o in win32Proc.Get())

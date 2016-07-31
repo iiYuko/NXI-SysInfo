@@ -30,6 +30,7 @@ namespace NXI_SysInfo
             label3.Text = i.OSFullName + ", v" + i.OSVersion + ", " + i.OSPlatform + ", " + totalRamMemoryStr  + "GB RAM";
 
             label10.Text = W32Mng.CPU.getCPUName();
+            label11.Text = "max.: " + W32Mng.CPU.getCpuMaxClockSpeed() + " MHz"; 
         }
     }
 }

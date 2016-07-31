@@ -13,6 +13,7 @@ namespace NXI_SysInfo
         {
             private static string CPUName;
             private static string CPUMaxClockSpeed;
+            private static string CPUCurrentClockSpeed;
 
             public static string getCPUName()
             {
@@ -44,6 +45,23 @@ namespace NXI_SysInfo
                 }
 
                 return CPUMaxClockSpeed;
+            }
+
+
+            public static string getCpuCurrentClockSpeed()
+            {
+                using (ManagementObjectSearcher win32Proc = new ManagementObjectSearcher("select * from Win32_Processor"))
+
+
+                    foreach (ManagementObject o in win32Proc.Get())
+                    {
+                        CPUCurrentClockSpeed = o["CurrentClockSpeed"].ToString();
+                    }
+                {
+
+                }
+
+                return CPUCurrentClockSpeed;
             }
         }
     }
